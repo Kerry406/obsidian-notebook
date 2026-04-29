@@ -1,0 +1,121 @@
+/* ========================================
+ * Obsidian 标题样式 - 顺级减小（紧凑版）
+ * - 所有标题文字：蓝色 (#2196f3)
+ * - 一级标题：蓝色左边框，字号仅略大于正文 (1.2em)
+ * - 二～六级：无边框，字号逐级递减至与正文相同
+ * ======================================== */
+
+/* ---------- 阅读模式（预览视图） ---------- */
+
+/* 一级标题：蓝色边框 + 蓝色文字，字号 1.2em（比正文略大） */
+.markdown-preview-view h1 {
+    border-left: 4px solid #2196f3 !important;
+    padding-left: 8px !important;
+    color: #2196f3 !important;
+    font-size: 1.2em !important;      /* 更小，但仍是最大 */
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    line-height: 1.4;
+}
+
+/* 二级标题：1.15em */
+.markdown-preview-view h2 {
+    font-size: 1.15em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+/* 三级标题：1.1em */
+.markdown-preview-view h3 {
+    font-size: 1.1em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+/* 四级标题：1.05em */
+.markdown-preview-view h4 {
+    font-size: 1.05em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+/* 五级、六级标题：1em（与正文相同） */
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    font-size: 1em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    line-height: 1.4;
+}
+
+
+/* ---------- 编辑模式（实时预览） ---------- */
+
+/* 一级标题 */
+.cm-s-obsidian .cm-header-1 {
+    border-left: 4px solid #2196f3 !important;
+    padding-left: 8px !important;
+    color: #2196f3 !important;
+    font-size: 1.15em !important;     /* 编辑模式略小，保持相对大小 */
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* 二级标题 */
+.cm-s-obsidian .cm-header-2 {
+    font-size: 1.1em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 650;
+}
+
+/* 三级标题 */
+.cm-s-obsidian .cm-header-3 {
+    font-size: 1.05em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+}
+
+/* 四级标题 */
+.cm-s-obsidian .cm-header-4 {
+    font-size: 1.0em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+}
+
+/* 五级、六级标题 */
+.cm-s-obsidian .cm-header-5,
+.cm-s-obsidian .cm-header-6 {
+    font-size: 0.95em !important;
+    color: #2196f3 !important;
+    border-left: none !important;
+    font-weight: 600;
+}
+
+/* 淡化编辑模式中的 markdown 标记符号（井号） */
+.cm-s-obsidian .cm-formatting-header {
+    opacity: 0.6;
+    font-size: 0.9em;
+    transition: opacity 0.2s;
+}
+.cm-s-obsidian .cm-formatting-header:hover {
+    opacity: 0.9;
+}
